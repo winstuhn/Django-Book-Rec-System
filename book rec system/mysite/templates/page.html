@@ -1,0 +1,10 @@
+{% for item in books %}
+<li>{{ item }}</li>
+{% endfor %}
+
+<form method="POST" action="">
+    {% csrf_token %}
+<input type="text" name="textfield">
+    
+<button type="submit">Search for books!</button>
+</form>
